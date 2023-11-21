@@ -3,7 +3,7 @@
 
 ## COVID-19 Percolation Model
 
-This repository contains a Python script for simulating the spread of the COVID-19 virus using percolation theory. The model uses a grid-based approach to simulate infection spread, recovery, death rates, and vaccination effects over time.
+This repository contains a Python script for simulating the spread of the COVID-19 virus using percolation theory. The model uses a grid-based approach to simulate infection spread, recovery, death rates, and vaccination effects over time. The percolation model can be also be used for wildfires simulation. 
 
 ## Features
 - Grid creation for simulation space.
