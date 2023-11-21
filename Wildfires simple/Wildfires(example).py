@@ -2,8 +2,9 @@ import sqlite3
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Path to the extracted SQLite database file
-db_file_path = '/mnt/data/extracted/FPA_FOD_20170508.sqlite'
+# Path to the extracted SQLite database file from Kaggle Wildires
+# Download at https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires/
+db_file_path = '(...)/mnt/data/extracted/FPA_FOD_20170508.sqlite'
 
 # Function to load wildfire data
 def load_wildfire_data(db_path, limit=1000):
@@ -31,7 +32,8 @@ def initialize_grid_modified(data, grid_size=100):
         col = int(grid_size * (lon - min_lon) / lon_range) - 1
         row = max(0, min(row, grid_size - 1))
         col = max(0, min(col, grid_size - 1))
-        grid[row, col] = size  # Assign fire size to the grid cell
+        size = 1000 # Assign fire size to the grid cell
+        grid[row, col] = size  
 
     return grid
 
